@@ -42,15 +42,15 @@
 }
 
 .cart .img-hover {
-  position: absolute;
-  left: 50%;
-  top: 28%;
-  transform: translate(-50%, -50%);
-  background-color: hsla(178, 100%, 50%, 0.5);
-  width: 86%;
-  height: 52%;
-  border-radius: 10px;
-  display: none;
+   position: absolute;
+   left: 50%;
+   top: 29.5%;
+   transform: translate(-50%, -50%);
+   background-color: hsla(178, 100%, 50%, 0.5);
+   width: 86%;
+   height: 50.5%;
+   border-radius: 10px;
+   display: none;
 }
 
 .cart .img-hover svg {
