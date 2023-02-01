@@ -1,5 +1,5 @@
 :root {
-  --Soft-blue: hsl(215, 51%, 70%);
+  --Soft-blue: #8bacda;
   --Cyan: hsl(178, 100%, 50%);
   --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
   --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
@@ -15,6 +15,148 @@
 }
 
 .parent {
+  position: relative;
   height: 100vh;
-  
+  background-color: var(--Very-dark-blue-main-BG);
+}
+
+.cart {
+  /* Position */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* ------- */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Very-dark-blue-card-BG);
+  padding: 25px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.cart .image {
+  transition: 2s;
+}
+
+.cart .image-one {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cart .img-hover {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(178, 100%, 50%, 0.5);
+  width: 86%;
+  height: 52%;
+  border-radius: 10px;
+  display: none;
+}
+
+.cart .img-hover svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cart .image:hover .img-hover {
+  display: block;
+  cursor: pointer;
+}
+
+.cart h2 {
+  color: var(--White);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.cart h2:hover {
+  cursor: pointer;
+  color: var(--Cyan);
+}
+
+.cart p {
+  color: #90a6cd;
+  font-size: var(--Font-Size-P);
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.cart .date-left {
+  display: inline-block;
+  color: #8eabd7;
+  font-weight: 400;
+}
+
+.cart .information {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart .information .left,
+.cart .information .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart .information h4:not(.date-left) {
+  display: inline-block;
+  color: #00fff8;
+  font-weight: 600;
+}
+
+.cart svg {
+  margin-top: 1px;
+  margin-right: 7px;
+}
+
+.cart .hr {
+  background-color: var(--Very-dark-blue-line);
+  margin-bottom: 10px;
+  height: 1px;
+  width: 100%;
+}
+
+.cart .Profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.cart .Profile img {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.cart .Profile .about {
+  display: flex;
+  color: var(--Soft-blue);
+  margin-top: 6px;
+}
+
+.cart .Profile .name {
+  color: var(--White);
+  margin-left: 2px;
+  font-weight: 300;
+}
+
+.cart .Profile .name:hover {
+  cursor: pointer;
+  color: var(--Cyan);
 }
