@@ -35,13 +35,9 @@
   border-radius: 20px;
 }
 
-.cart .image {
-  transition: 2s;
-}
-
 .cart .image-one {
   width: 100%;
-  height: 50%;
+  height: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
 }
